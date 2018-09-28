@@ -86,7 +86,7 @@ var BoardClass = /** @class */ (function () {
         var unOpenedTile = this.floor.filter(function (tile) { return tile.isOpen === false; });
         if (unOpenedTile.length === this.totalBomb) {
             showOrHideResetButton(true);
-            return alert('Anda telah membuka semua kotak kecuali bomb. Anda MENANG!!!');
+            return renderMessage('Anda telah membuka semua kotak kecuali bomb. Anda MENANG!!!');
         }
     };
     BoardClass.prototype.play = function (coord, debug) {
