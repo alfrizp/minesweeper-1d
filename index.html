@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Minesweeper</title>
+  <style>
+    .tdClass {
+      width: 150px;
+      white-space:pre;
+      text-align: center;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Minesweeper 1D - Typescript</h1>
+
+  <div id="initGameDiv" style="display:block;">
+    <label>Jumlah kotak</label>
+    <input id="inputTileLength" type="text">
+    <br>
+    <label>Jumlah bomb</label>
+    <input id="inputTotalBomb" type="text">
+    <button onclick="initGame()">Mulai Game</button>
+  </div>
+
+  <p id="messageGame"></p>
+
+  <div id="playGameDiv" style="display:none;">
+    <label>Masukkan koordinat</label>
+    <input id="inputCoord" type="text">
+    <button onclick="checkCoord()">Cek Koordinat</button>
+
+    <pre>
+      <table id="boardGame">
+  
+      </table>
+      <table id="cheatBoardGame">
+  
+      </table>
+    </pre>
+  </div>
+
+
+  <button id="resetGameButton" onclick="resetGame()" style="display:none;">Main lagi</button>
+  
+  <script src="./build/script.js"></script>
+</body>
+</html>
