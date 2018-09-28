@@ -106,7 +106,7 @@ class BoardClass {
     let unOpenedTile: Array<TileClass> = this.floor.filter(tile => tile.isOpen === false)
     if (unOpenedTile.length === this.totalBomb) {
       showOrHideResetButton(true)
-      return alert('Anda telah membuka semua kotak kecuali bomb. Anda MENANG!!!')
+      return renderMessage('Anda telah membuka semua kotak kecuali bomb. Anda MENANG!!!')
     }
   }
 
